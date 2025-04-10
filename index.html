@@ -1,6 +1,6 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,93 +8,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    html {
-      scroll-behavior: smooth;
-    }
-    body {
-      background-color: #000;
-      color: #f5f5f5;
-    }
-    header {
-      background-color: #111;
-      color: white;
-      padding: 30px 20px;
-      text-align: center;
-    }
-    nav a {
-      color: #00bfff;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    .container {
-      max-width: 1000px;
-      margin: auto;
-      padding: 40px 20px;
-    }
-    section {
-      margin-bottom: 60px;
-    }
-    h2 {
-      border-bottom: 3px solid #00bfff;
-      display: inline-block;
-      margin-bottom: 20px;
-      font-size: 28px;
-      color: #00bfff;
-    }
-    .projects, .skills {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-    .project, .skill {
-      background-color: #1a1a1a;
-      padding: 20px;
-      border-radius: 12px;
-      box-shadow: 0 4px 10px rgba(0, 191, 255, 0.2);
-      flex: 1 1 calc(50% - 20px);
-      transition: transform 0.3s ease;
-    }
-    .project:hover, .skill:hover {
-      transform: translateY(-5px);
-    }
-    .project img {
-      max-width: 100%;
-      border-radius: 8px;
-      margin-top: 15px;
-    }
-    ul li {
-      margin-bottom: 10px;
-    }
-    footer {
-      text-align: center;
-      padding: 30px;
-      background-color: #111;
-      color: #ccc;
-    }
-    a {
-      color: #00bfff;
-    }
-    a:hover {
-      text-decoration: underline;
-    }
-    @media (max-width: 600px) {
-      .project, .skill {
-        flex: 1 1 100%;
-      }
-    }
+    body { background-color: #000; color: #f5f5f5; font-family: 'Segoe UI', Tahoma, sans-serif; margin: 0; padding: 0; }
+    header, footer { background-color: #111; text-align: center; padding: 30px; }
+    nav a { color: #00bfff; margin: 0 10px; text-decoration: none; font-weight: bold; }
+    nav a:hover, a:hover { text-decoration: underline; }
+    .container { max-width: 1000px; margin: auto; padding: 40px 20px; }
+    section { margin-bottom: 60px; }
+    h2 { border-bottom: 3px solid #00bfff; color: #00bfff; display: inline-block; margin-bottom: 20px; font-size: 28px; }
+    .projects, .skills { display: flex; flex-wrap: wrap; gap: 20px; }
+    .project, .skill { background-color: #1a1a1a; padding: 20px; border-radius: 12px; flex: 1 1 calc(50% - 20px); transition: 0.3s; box-shadow: 0 4px 10px rgba(0, 191, 255, 0.2); }
+    .project:hover, .skill:hover { transform: translateY(-5px); }
+    .project img { max-width: 100%; border-radius: 8px; margin-top: 15px; }
+    @media (max-width: 600px) { .project, .skill { flex: 1 1 100%; } }
   </style>
 </head>
-
 <body>
   <header>
     <h1>Faizan Munir</h1>
@@ -106,37 +33,23 @@
       <a href="#contact">Contact</a>
     </nav>
   </header>
-
   <div class="container">
-    <section id="about" data-aos="fade-up">
-      <h2>About Me</h2>
-      <p>I'm a passionate 3rd-year Mechanical Engineering student...</p>
-      <ul>
-        <li>Interested in manufacturing and assembly processes.</li>
-        <li>Curious about optimization of modern manufacturing.</li>
-        <li>Intrigued by the transformation of raw materials into finished products.</li>
-        <li>Interested in CNC machining, 3D printing, and other fabrication techniques.</li>
-      </ul>
-    </section>
-
-    <section id="projects" data-aos="fade-up">
-      <h2>Projects</h2>
+    <section id="about"><h2>About Me</h2><p>I'm a passionate 3rd-year Mechanical Engineering student...</p></section>
+    <section id="projects"><h2>Projects</h2>
       <div class="projects">
         <div class="project">
           <h3>SOFC-Based Hybrid Renewable Energy System Simulation</h3>
-          <p>Designed and simulated an integrated renewable energy system incorporating Solid Oxide Fuel Cells (SOFC)...</p>
-          <img src="assets/sofc_project_image.jpg" alt="SOFC Simulation Diagram">
+          <p>Designed and simulated...</p>
+          <img src="assets/sofc_project_image.jpg" alt="SOFC Simulation Diagram" />
         </div>
         <div class="project">
           <h3>Sand Casting of a Flange</h3>
-          <p>Conducted a hands-on manufacturing project to produce a flange using the sand casting process...</p>
-          <img src="assets/image5.jpeg" alt="Sand Casting Process">
+          <p>Conducted a hands-on manufacturing project...</p>
+          <img src="assets/image5.jpeg" alt="Sand Casting Process" />
         </div>
       </div>
     </section>
-
-    <section id="skills" data-aos="fade-up">
-      <h2>Skills</h2>
+    <section id="skills"><h2>Skills</h2>
       <div class="skills">
         <div class="skill">MATLAB (Basic)</div>
         <div class="skill">Simulink (Basic)</div>
@@ -147,30 +60,17 @@
         <div class="skill">3D Printing (Basic)</div>
       </div>
     </section>
-
-    <section id="resume" data-aos="fade-up">
-      <h2>Resume</h2>
-      <iframe src="https://docs.google.com/gview?url=https://yourusername.github.io/faizan-portfolio/assets/Blue%20Simple%20Professional%20CV%20Resume%20(1).pdf&embedded=true" style="width:100%; height:600px; border: none;"></iframe>
-      <p style="margin-top: 15px;"><a href="assets/Blue Simple Professional CV Resume (1).pdf" target="_blank">Download My Resume (PDF)</a></p>
+    <section id="resume"><h2>Resume</h2>
+      <iframe src="https://docs.google.com/gview?url=https://Faizan251104.github.io/faizan-portfolio/assets/resume.pdf&embedded=true" style="width:100%; height:600px; border: none;"></iframe>
+      <p><a href="assets/resume.pdf" target="_blank">Download My Resume (PDF)</a></p>
     </section>
-
-    <section id="contact" data-aos="fade-up">
-      <h2>Contact</h2>
+    <section id="contact"><h2>Contact</h2>
       <p>Location: Karachi, Pakistan</p>
       <p>Email: faizanmunir1998@gmail.com</p>
       <p>Phone: 0313 1230735</p>
       <p>LinkedIn: (Coming Soon)</p>
     </section>
   </div>
-
-  <footer>
-    <p>&copy; 2025 Faizan Munir. All rights reserved.</p>
-  </footer>
-
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 800, offset: 120 });
-  </script>
+  <footer><p>&copy; 2025 Faizan Munir. All rights reserved.</p></footer>
 </body>
-
 </html>
